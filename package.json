@@ -1,4 +1,5 @@
 {
+  "homepage": "https://abdulkafi88.github.io/rent-up"  ,
   "name": "project-react",
   "author": {
     "name": "Cosden Solutions",
@@ -9,6 +10,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "fix": "npm run lint && npm run prettier",
     "lint": "eslint . --ext js,jsx --fix --report-unused-disable-directives --max-warnings 0",
@@ -60,6 +63,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.30",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
